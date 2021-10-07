@@ -64,26 +64,41 @@
           </button>
           <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
           <form class="modal-form">
-            <label>
-              Имя
-              <input type="text" name="name"/>
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="tel" />
-            </label>
-            <label>
-              Почта
-              <input type="email" name="mail" />
-            </label>
-           <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="4"  placeholder="Введите текст"></textarea>
-            <label>
-              <input type="checkbox" name="check" />
-              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+
+            <div class="field-form">
+              <label class="form-lable" for="name">Имя</label>
+              <input class="input-form" type="text" id="name" name="name" placeholder=" " />
+              <svg class="icon-form">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+
+            <div class="field-form">
+              <label class="form-lable" for="tel">Телефон</label>
+              <input class="input-form" type="tel" id="tel" name="tel" placeholder=" " />
+                <svg class="icon-form">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+            </div>
+            
+            <div class="field-form">
+              <label class="form-lable" for="mail">Почта</label>
+              <input class="input-form" type="email" id="mail" name="mail" placeholder=" " />
+              <svg class="icon-form">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+            
+           <label class="form-lable" for="comment">Комментарий</label>
+            <textarea class="textarea-field" name="comment" id="comment" rows="4"  placeholder="Введите текст"></textarea>
+            
+            <label class="checkbox-form">
+              <input class="checkbox-input" type="checkbox" name="check" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
             </label>
 
-            <button type="submit">Отправить</button>
+            <button class="checkbox-btm" type="submit">Отправить</button>
           </form>
         </div>
     </div>
